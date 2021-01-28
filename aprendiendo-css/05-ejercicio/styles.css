@@ -16,3 +16,11 @@ con 4 lineas de 2 cajas.
 9. El footer debe tener un ancho del 100% del div que lo contiene
 y estar abajo del todo
 */
+#contenedor{
+    width: 1200px;
+    display: block;
+    text-align: center;   
+}
+#cabecera{
+    font-size: 30px;
+}
