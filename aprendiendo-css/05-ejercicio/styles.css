@@ -16,11 +16,52 @@ con 4 lineas de 2 cajas.
 9. El footer debe tener un ancho del 100% del div que lo contiene
 y estar abajo del todo
 */
-#contenedor{
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general{
     width: 1200px;
+    margin: 0px auto;/*para centrar el contenido*/
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+#header{
+    width: 100%;/*para ocupar el 100% del ancho*/
+    height: 100px;
+    background: blue;
+    color: white;
+    text-align: center;
+    line-height: 92px;/*para centrar el texto verticalmente*/
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#menu ul li{
+    /*display: inline-block;*/
     display: block;
+    float: left;
+}
+
+/*
+#contenedor{
+    width: 1200px;    
     text-align: center;   
 }
-#cabecera{
+
+#header{
     font-size: 30px;
 }
+
+.caja{
+    display: block;
+    float: left;
+}
+*/

@@ -1,46 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio</title>
+    <title>Ejercicio con HTML y CSS</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
     <!--Contenedor-->
-    <div id="contenedor">
+    <div id="general">
         <!--Cabecera-->
-        <header id="cabecera">
-            <p>Texto de la cabecera</p>
+        <header id="header">
+            <h1>Ejercicio con HTML y CSS</h1>
         </header>
-        <!--Contenedor-->
-        <div id="contenedor">
-            <!--Barra lateral-->
-            <aside id="sidebar">
-            </aside>
-            <!--Caja principal-->
-            <div id="principal">
-                <!--Menu-->
-                <nav id="menu">
-                    <ul>
-                        <li>
-                            <a href="#">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#">Sobre Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="clearfix"></div>
+        <!--Menu-->
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Artículos</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </nav>
+        <!--Contenido principal-->
+        <section id="contenido">
+            <div class="caja">
+                <h2>Caja 1</h2>
             </div>
-        </div>
+            <div class="caja">
+                <h2>Caja 2</h2>
+            </div>
+            <div class="caja">
+                <h2>Caja 3</h2>
+            </div>
+            <div class="caja">
+                <h2>Caja 4</h2>
+            </div>
+            <div class="caja">
+                <h2>Caja 5</h2>
+            </div>
+            <div class="caja">
+                <h2>Caja 6</h2>
+            </div>
+            <div class="caja">
+                <h2>Caja 7</h2>
+            </div>
+            <div class="caja">
+                <h2>Caja 8</h2>
+            </div>
+            <!--Barra lateral-->
+            <aside id="lateral">
+                <div class="caja">
+                    <h2>Elemento de la barra lateral</h2>
+                </div>
+            </aside>            
+        </section>
         <!--Pie de página-->
-        <footer id="pie">
+        <footer id="footer">
             <p>Desarrollado por Ariel Muñoz &COPY; 2021</p>
         </footer>
     </div>
