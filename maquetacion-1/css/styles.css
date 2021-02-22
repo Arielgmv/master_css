@@ -1,0 +1,53 @@
+/*Fuentes*/
+@font-face{
+    font-family: 'fajala';
+    src: url(./fonts/FjallaOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Helvetica, Arial;
+    text-decoration: none;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+/*Cabecera*/
+#cabecera{
+    /*border: 3px dotted black;*/
+    width: 85%;    
+}
+#logo{
+    /*border: 3px dotted green;*/
+    text-align: center;
+}
+
+#logo a img{
+    width: 120px;
+    height: 160px;
+}
+
+#titulo{
+    /*border: 3px dotted red;*/
+    text-align: center;
+}
+
+#titulo a{
+    font-size: 40px;    
+}
+#menu ul li{
+    list-style: none;
+    border: 3px dotted blue;
+    float: left;
+    background: black;
+}
+#menu ul li a{
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;       
+}
