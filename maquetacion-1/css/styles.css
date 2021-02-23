@@ -1,7 +1,7 @@
 /*Fuentes*/
 @font-face{
-    font-family: 'fajala';
-    src: url(./fonts/FjallaOne-Regular.ttf) format('truetype');
+    font-family: 'nevis';
+    src: url(./fonts/nevis.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +19,7 @@
 /*Cabecera*/
 #cabecera{
     /*border: 3px dotted black;*/
-    width: 85%;    
+        
 }
 #logo{
     /*border: 3px dotted green;*/
@@ -34,20 +34,42 @@
 #titulo{
     /*border: 3px dotted red;*/
     text-align: center;
+    margin: 10px;   
 }
 
 #titulo a{
-    font-size: 40px;    
+    font-family: 'nevis', Helvetica;
+    font-size: 40px;
+    color: #71b053;    
 }
-#menu ul li{
-    list-style: none;
-    border: 3px dotted blue;
-    float: left;
+
+#menu{
     background: black;
+    width: 100%; 
+    border: 1px solid black;
+    height: 45px;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
 }
+
+#menu ul{
+    list-style: none;
+    
+}
+
+#menu ul li{    
+    
+    float: left;    
+    line-height: 45px;
+    border-right: 1px solid #d6d6d6;
+}
+
 #menu ul li a{
-    border: 1px solid red;
+    display: block;
+    /*border: 1px solid red;*/
     padding-left: 10px;
     padding-right: 10px;
-    color: white;       
+    font-size: 15px;
+    color: white;    
 }
