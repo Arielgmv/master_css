@@ -1,75 +1,12 @@
 /*Fuentes*/
-@font-face{
-    font-family: 'nevis';
-    src: url(./fonts/nevis.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-/*Generales*/
+
+/*Estilos Generales*/
 *{
-    margin: 0px;
     padding: 0px;
-    font-family: sans-serif, Helvetica, Arial;
-    text-decoration: none;
+    margin: 0px
 }
-.clearfix{
-    clear: both;
-    float: none;
+
+body{
+    background-image: url(../img/paven.png);
 }
 /*Cabecera*/
-#cabecera{
-    /*border: 3px dotted black;*/
-        
-}
-#logo{
-    /*border: 3px dotted green;*/
-    text-align: center;
-}
-
-#logo a img{
-    width: 120px;
-    height: 160px;
-}
-
-#titulo{
-    /*border: 3px dotted red;*/
-    text-align: center;
-    margin: 10px;   
-}
-
-#titulo a{
-    font-family: 'nevis', Helvetica;
-    font-size: 40px;
-    color: #71b053;    
-}
-
-#menu{
-    background: black;
-    width: 100%; 
-    border: 1px solid black;
-    height: 45px;
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-}
-
-#menu ul{
-    list-style: none;
-    
-}
-
-#menu ul li{    
-    
-    float: left;    
-    line-height: 45px;
-    border-right: 1px solid #d6d6d6;
-}
-
-#menu ul li a{
-    display: block;
-    /*border: 1px solid red;*/
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 15px;
-    color: white;    
-}
