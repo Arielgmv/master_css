@@ -67,3 +67,47 @@ body{
 #header h1 a:hover{
     text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231;
 }
+
+/*Barra de Navegación*/
+#nav{
+    /*border: 3px dotted brown;*/
+    width: 100%; /*queremos que ocupe todo el ancho de la página*/
+    height: 40px;
+    background-color: #333333;
+    color: white;   
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#nav ul{
+    /*border: 3px dotted brown;*/
+    list-style: none;    
+    margin: 0px auto;/*para centrar la caja del ul*/    
+    width: 1130px;
+}
+
+#nav > ul > li{
+    /*border: 3px dotted brown;*/
+    line-height: 40px;
+    float: left; /*para que se pongan uno a lado del otro*/
+    border-right: 1px solid gray;
+    transition: all 300ms;
+}
+
+#nav > ul > li a {
+    display: block;/*para modificarlos como quiera*/
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav > ul > li > a:first-child{
+    border-left: 1px solid gray;
+}
+
+#nav >ul >li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
+}
