@@ -1,5 +1,5 @@
 /*Fuentes*/
-@font-face{
+@font-face {
     font-family: 'nevis';
     src: url('./fonts/nevis.eot');
     src: url('./fonts/nevis.eot?#iefix') format('embedded-opentype'),
@@ -11,35 +11,36 @@
 }
 
 /*Estilos Generales*/
-*{
+* {
     padding: 0px;
     margin: 0px
 }
 
-body{
+body {
     background-image: url(../img/paven.png);
 }
+
 /*Cabecera*/
-#header{
+#header {
     min-width: 1024px;
     width: 100%;
-    height: 250px;    
-    margin: 0px auto;/*para centrar*/
+    height: 250px;
+    margin: 0px auto; /*para centrar*/
     /*border: 5px dotted black;*/
 }
 
-#header a{
+#header a {
     text-decoration: none;
 }
 
-#header #logotipo{
+#header #logotipo {
     width: 770px;
     margin: 0px auto;/*para centrar*/
     padding-top: 20px;
     /*border: 3px dotted blue;*/
 }
 
-#header #logotipo img{
+#header #logotipo img {
     display: block;/*para que se comporte como un bloque*/
     text-align: center;
     margin: 0px auto;/*para centrar la imagen*/
@@ -47,16 +48,16 @@ body{
     /*border: 3px dotted red;*/
 }
 
-#header h1{
+#header h1 {
     text-align: center;
     /*border: 3px dotted green;*/
     font-size: 40px;
     font-family: 'nevis';
     margin-top: 10px;
-    
+
 }
 
-#header h1 a{
+#header h1 a {
     /*border: 3px dotted brown;*/
     color: #70b231;
     letter-spacing: 4px;
@@ -64,30 +65,30 @@ body{
     transition: all 300ms;
 }
 
-#header h1 a:hover{
+#header h1 a:hover {
     text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231;
 }
 
 /*Barra de Navegación*/
-#nav{
+#nav {
     /*border: 3px dotted brown;*/
-    width: 100%; /*queremos que ocupe todo el ancho de la página*/
+    width: 100%;/*queremos que ocupe todo el ancho de la página*/
     height: 40px;
     background-color: #333333;
-    color: white;   
+    color: white;
     font-family: sans-serif, Helvetica, Arial;
     font-size: 14px;
     box-shadow: 0px 0px 2px gray;
 }
 
-#nav ul{
+#nav ul {
     /*border: 3px dotted brown;*/
-    list-style: none;    
-    margin: 0px auto;/*para centrar la caja del ul*/    
+    list-style: none;
+    margin: 0px auto; /*para centrar la caja del ul*/
     width: 1130px;
 }
 
-#nav > ul > li{
+#nav>ul>li {
     /*border: 3px dotted brown;*/
     line-height: 40px;
     float: left; /*para que se pongan uno a lado del otro*/
@@ -95,7 +96,7 @@ body{
     transition: all 300ms;
 }
 
-#nav > ul > li a {
+#nav>ul>li a {
     display: block;/*para modificarlos como quiera*/
     padding-left: 20px;
     padding-right: 20px;
@@ -103,11 +104,43 @@ body{
     text-decoration: none;
 }
 
-#nav > ul > li > a:first-child{
+#nav>ul>li>a:first-child {
     border-left: 1px solid gray;
 }
 
-#nav >ul >li:hover{
+#nav>ul>li:hover {
     background-color: #70b231;
     box-shadow: 0px 0px 4px green inset;
+}
+
+/*Menu desplegable*/
+#nav > ul > li > ul {
+    display: none;
+    position: absolute;    
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+
+#nav > ul > li:hover > ul{
+    display: block;
+}
+
+#nav > ul > li:hover > ul > li{
+    background-color: #f2f1f0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: all 300ms;
+}
+
+#nav > ul > li:hover > ul > li a{
+    color: #666666;
+}
+
+#nav > ul > li:hover > ul > li:hover{
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: rgb(238, 237, 237);
+
 }

@@ -73,3 +73,14 @@
     font-size: 15px;
     color: white;    
 }
+
+#sidebar{
+    border: 3px dotted green;
+    width: 205px;    
+}
+
+#sidebar h3{
+    border: 3px dotted blue;
+    padding: 5px;
+    margin: 0px auto;
+}

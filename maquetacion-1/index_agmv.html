@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master en CSS</title>
     <link rel="icon" type="image/x-icon" href="./img/logo.png">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles_agmv.css">
 </head>
 <body>
     <!--Cabecera-->
@@ -55,5 +55,24 @@
         </nav>
         <div class="clearfix"></div>
     </header>
+    <!--Inicio barra lateral-->
+    <aside id="sidebar">
+        <div id="loginweb" class="bloque">
+            <h3>Entrar a la web</h3>
+            <form action="index_agmv.html" method="POST">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario">
+
+                <label for="password">Contraseña:</label>
+                <input type="text" name="password">
+
+                <input type="submit" value="Entrar">
+            </form>
+            <a href="./index_agmv.html">Zona de Alumnos</a>
+            <a href="./index_agmv.html">Zona del Profesor</a>
+            <a href="./index_agmv.html">Acceso a calificaciones</a>
+        </div>
+    </aside>
+    <!--Fin barra lateral-->
 </body>
 </html>
